@@ -1,0 +1,39 @@
+.icon-picker {
+  position: absolute;
+  background-color:#f2f0f0;
+  border: 0.5px black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-left: 500px;
+}
+
+.icon-grid {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.icon-display{
+  margin: 20px 0 0 500px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.icon-displayer{
+  
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #6f6fee;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 0.2px solid #ccc;
+}
