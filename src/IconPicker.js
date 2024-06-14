@@ -17,7 +17,7 @@ const IconPicker = ({
 
   const startIndex = currentPage * iconsPerPage;
   const endIndex = startIndex + iconsPerPage;
-  const footerIcons = iconList.slice(startIndex, endIndex);
+  const paginatedIcons = iconList.slice(startIndex, endIndex);
 
   const handleIconClick = (icon) => {
     onIconSelect(icon);
@@ -26,7 +26,7 @@ const IconPicker = ({
   return (
     <div className="icon-picker" style={{ height: pickerHeight, width: pickerWidth }}>
       <div className="icon-grid" style={{ gridTemplateColumns: `repeat(${columnsInOnePage}, 1fr)` }}>
-        {footerIcons.map((icon, index) => (
+        {paginatedIcons.map((icon, index) => (
           <div
             key={index}
             className="icon-container"
@@ -36,7 +36,7 @@ const IconPicker = ({
           />
         ))}
       </div>
-      <div className="footerrow">
+      <div className="pagefooter">
         <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 0}>
           Previous
         </button>
