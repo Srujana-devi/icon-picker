@@ -14,10 +14,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="icon-display" onClick={() => setShowPicker(true)} style={{ height: '50px', width: '150px' }}>
+      <div className="icon-display" onClick={() => setShowPicker(true)} style={{ height: '50px', width: '250px' }}>
         {selectedIcon ? (
-          <div className= "icon-displayer" dangerouslySetInnerHTML={{ __html: feather.icons[selectedIcon].toSvg() }} style={{ height: '100%', width: '100%' }} />
-        ) : 'Select App Icon'}
+          <div className= "icon-displayer" dangerouslySetInnerHTML={{ __html: feather.icons[selectedIcon].toSvg() }} style={{ height: '100%' }}  />
+        ) : 'Click here to select an icon'}
       </div>
       {showPicker && (
         <IconPicker

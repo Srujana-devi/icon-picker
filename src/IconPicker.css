@@ -16,12 +16,18 @@
   overflow-y: auto;
 }
 .icon-display{
-  margin: 20px 0 0 500px;
+  margin: 20px 0 10px 500px;
   font-size: 1.2rem;
   cursor: pointer;
 }
 .icon-displayer{
   
+  width: 55px;
+  margin-bottom: 10px;
+  margin-left: 200px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .icon-container {
   display: flex;
@@ -31,7 +37,7 @@
   background-color: #6f6fee;
 }
 
-.pagination {
+.footerrow {
   display: flex;
   justify-content: space-between;
   padding: 10px;
